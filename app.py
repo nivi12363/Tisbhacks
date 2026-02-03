@@ -127,7 +127,7 @@ if st.session_state.page == "Home":
           box-shadow: 0 10px 30px rgba(0,0,0,0.25);
           background: rgba(255,255,255,0.06);
       ">
-        <img src="https://th.bing.com/th/id/OIP.0AaKKAq8g1w7TX0mE4DzlAHaEn?w=142&h=108&c=7&qlt=90&bgcl=75681d&r=0&o=6&dpr=1.3&pid=13.1"
+        <img src="https://greenscoreapp.com/wp-content/uploads/2024/09/Empowering-Sustainability-Through-Innovation-image2-Green-Score.webp"
              style="width:100%; height:100%; object-fit:cover;">
       </div>
     </div>
