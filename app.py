@@ -44,7 +44,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-c1, c2, c3, c4 = st.columns([1, 1, 1])
+c1, c2, c3, c4 = st.columns([1, 1, 1, 1])
 with c1:
     st.button("🌿 GreenScore", use_container_width=True, on_click=go, args=("GreenScore",))
 with c2:
