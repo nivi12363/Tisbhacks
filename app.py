@@ -2,6 +2,21 @@ import streamlit as st
 
 st.set_page_config(page_title="EcoLens", page_icon="🌱", layout="wide")
 
+st.markdown("""
+<style>
+.block-container { padding-top: 1rem !important; }
+
+/* Sticky header box */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #0e1117;   /* dark theme background */
+  padding: 0.5rem 0 0.75rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+</style>
+""", unsafe_allow_html=True)
 
 # -------------------------
 # Navigation state
@@ -13,42 +28,37 @@ def go(page_name: str):
     st.session_state.page = page_name
 
 # -------------------------
+# Sticky header (always visible)
+# -------------------------
+st.markdown('<div class="sticky-header">', unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <h1 style="text-align:center; font-size:72px; margin:0;">
+        🌱 EcoLens
+    </h1>
+    <p style="text-align:center; font-size:18px; opacity:0.85; margin-top:6px; margin-bottom:14px;">
+        Make smarter, sustainable buying decisions
+    </p>
+    """,
+    unsafe_allow_html=True
+)
+
+c1, c2, c3 = st.columns([1, 1, 1])
+with c1:
+    st.button("🌿 GreenScore", use_container_width=True, on_click=go, args=("GreenScore",))
+with c2:
+    st.button("🤖 AI Chatbot", use_container_width=True, on_click=go, args=("Chatbot",))
+with c3:
+    st.button("ℹ️ About", use_container_width=True, on_click=go, args=("About",))
+
+st.markdown("</div>", unsafe_allow_html=True)
+st.write("")  # spacer
+
+# -------------------------
 # HOME
 # -------------------------
 if st.session_state.page == "Home":
-
-    st.markdown("""
-    <style>
-        .block-container {
-            padding-top: 1rem !important;
-        }
-    </style>
-""", unsafe_allow_html=True)
-    # Big centered title
-    st.markdown(
-        """
-        <h1 style="text-align:center; font-size:72px; margin-bottom: 0;">
-            🌱 EcoLens
-        </h1>
-        <p style="text-align:center; font-size:18px; opacity:0.85; margin-top: 0;">
-            Make smarter, sustainable buying decisions
-        </p>
-        """,
-        unsafe_allow_html=True
-    )
-
-    st.write("")  # spacer
-
-    # "Tabs" / menu buttons centered
-    c1, c2, c3 = st.columns([1, 1, 1])
-    with c1:
-        st.button("🌿 GreenScore", use_container_width=True, on_click=go, args=("GreenScore",))
-    with c2:
-        st.button("🤖 AI Chatbot", use_container_width=True, on_click=go, args=("Chatbot",))
-    with c3:
-        st.button("ℹ️ About", use_container_width=True, on_click=go, args=("About",))
-
-    st.divider()
 
     # Home content like your sketch
     left, right = st.columns([1, 2])
