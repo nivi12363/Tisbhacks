@@ -127,7 +127,7 @@ if st.session_state.page == "Home":
           box-shadow: 0 10px 30px rgba(0,0,0,0.25);
           background: rgba(255,255,255,0.06);
       ">
-        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1400&q=80"
+        <img src="https://th.bing.com/th/id/OIP.0AaKKAq8g1w7TX0mE4DzlAHaEn?w=142&h=108&c=7&qlt=90&bgcl=75681d&r=0&o=6&dpr=1.3&pid=13.1"
              style="width:100%; height:100%; object-fit:cover;">
       </div>
     </div>
@@ -162,7 +162,7 @@ if st.session_state.page == "Home":
               box-shadow: 0 10px 30px rgba(0,0,0,0.30);
               background: rgba(255,255,255,0.06);
           ">
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1400&q=80"
+            <img src="https://th.bing.com/th/id/OIP.W9A5MqCLAA6_LYrJEubwIwHaD4?w=329&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
                  style="width:100%; height:100%; object-fit:cover;">
           </div>
         </div>
