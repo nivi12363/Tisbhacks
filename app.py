@@ -127,7 +127,7 @@ if st.session_state.page == "Home":
           box-shadow: 0 10px 30px rgba(0,0,0,0.25);
           background: rgba(255,255,255,0.06);
       ">
-        <img src="https://greenscoreapp.com/wp-content/uploads/2024/09/Empowering-Sustainability-Through-Innovation-image2-Green-Score.webp"
+        <img src="https://www.iberdrola.com/documents/20125/40513/huella-de-carbono-746x419.jpg/f61f98a2-7c51-27f9-31d2-41b1dafe6bf7?t=1738248418273"
              style="width:100%; height:100%; object-fit:cover;">
       </div>
     </div>
@@ -162,7 +162,7 @@ if st.session_state.page == "Home":
               box-shadow: 0 10px 30px rgba(0,0,0,0.30);
               background: rgba(255,255,255,0.06);
           ">
-            <img src="https://th.bing.com/th/id/OIP.W9A5MqCLAA6_LYrJEubwIwHaD4?w=329&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            <img src="https://beetroot.co/wp-content/uploads/sites/2/2024/12/Cover_AI-chatbots-in-GreenTech.png"
                  style="width:100%; height:100%; object-fit:cover;">
           </div>
         </div>
@@ -231,7 +231,7 @@ if st.session_state.page == "Home":
               box-shadow: 0 10px 30px rgba(0,0,0,0.30);
               background: rgba(255,255,255,0.06);
           ">
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80"
+            <img src="https://greenscoreapp.com/wp-content/uploads/2024/09/Empowering-Sustainability-Through-Innovation-image2-Green-Score.webp"
                  style="width:100%; height:100%; object-fit:cover;">
           </div>
         </div>
