@@ -2,6 +2,14 @@ import streamlit as st
 
 st.set_page_config(page_title="EcoLens", page_icon="🌱", layout="wide")
 
+st.markdown("""
+    <style>
+        .block-container {
+            padding-top: 1rem !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # -------------------------
 # Navigation state
 # -------------------------
@@ -53,15 +61,13 @@ if st.session_state.page == "Home":
     with right:
         st.subheader("What is EcoLens?")
         st.write("""
-        EcoLens helps eco-conscious shoppers identify truly sustainable products.
+        EcoLens helps eco-conscious shoppers identify truly sustainable products by providing clear insights into a product`s sustainability impact.
         Scan a product, detect greenwashing, and get a clear **Green Score** with reasons.
         """)
 
     st.header("🚨 The Problem")
-    st.write("Greenwashing and vague labels make it hard to choose products that are actually sustainable.")
-
-    st.header("✅ Our Solution")
-    st.write("EcoLens combines product scanning with transparent scoring and actionable recommendations.")
+    st.write("Sustainability labels are vague and poorly regulated, so consumers often rely on marketing language instead of real data. Many of these claims are misleading, allowing greenwashing to go unnoticed. Because people lack the time and expertise to properly assess environmental impact, they make well-intentioned but poor choices. Additionally, there is no standardized way to verify eco-claims, and most existing apps reduce sustainability to simple green or red labels, hiding the real environmental costs of everyday products. As a result, people want to buy more environmentally friendly products but struggle to know which ones truly are.")
+    
 
     st.header("✨ Key Features")
     f1, f2 = st.columns(2)
