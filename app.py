@@ -74,11 +74,11 @@ if st.session_state.page == "Home":
     with right:
         st.markdown(
         """
-        <h2 style="font-size:36px; margin-bottom:10px;">
+        <h2 style="font-size:45px; margin-bottom:10px; margin-left:15px">
             What is EcoLens?
         </h2>
     
-        <p style="font-size:20px; line-height:1.6;">
+        <p style="font-size:25px; line-height:1.6; margin-left:15px">
             EcoLens helps eco-conscious shoppers identify truly sustainable products by providing clear insights into a product’s sustainability impact.
             Scan a product, detect greenwashing, and get a clear <b>Green Score</b> with reasons.
         </p>
