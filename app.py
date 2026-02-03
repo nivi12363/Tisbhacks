@@ -2,13 +2,6 @@ import streamlit as st
 
 st.set_page_config(page_title="EcoLens", page_icon="🌱", layout="wide")
 
-st.markdown("""
-    <style>
-        .block-container {
-            padding-top: 1rem !important;
-        }
-    </style>
-""", unsafe_allow_html=True)
 
 # -------------------------
 # Navigation state
@@ -23,6 +16,14 @@ def go(page_name: str):
 # HOME
 # -------------------------
 if st.session_state.page == "Home":
+
+    st.markdown("""
+    <style>
+        .block-container {
+            padding-top: 1rem !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
     # Big centered title
     st.markdown(
         """
