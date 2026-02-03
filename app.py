@@ -62,29 +62,30 @@ st.write("")  # spacer
 # -------------------------
 if st.session_state.page == "Home":
 
-    # Home content like your sketch
-    left, right = st.columns([1, 2])
+    left, right = st.columns([1.2, 1.8], gap="large")
 
     with left:
-        st.image(
-            "https://images.openai.com/static-rsc-3/L_9-L2VXhvFW5NZZvI6VLjA1QxHDiDeV5vyXsgKqM2ycJVtMFds_HEsJfhXYdziNs9fdDa4f0k4koZsaN3gehTxDddohscLt0wYAfwvMxRE?purpose=fullsize",
-            use_container_width=True
-        )
-
-    with right:
-        st.markdown(
-        """
-        <h2 style="font-size:45px; margin-bottom:10px; margin-left:15px">
-            What is EcoLens?
-        </h2>
+        st.markdown("""
+            <div style="height:420px; overflow:hidden; border-radius:12px;">
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03"
+                     style="width:100%; height:100%; object-fit:cover;">
+            </div>
+        """, unsafe_allow_html=True)
     
-        <p style="font-size:25px; line-height:1.6; margin-left:15px">
-            EcoLens helps eco-conscious shoppers identify truly sustainable products by providing clear insights into a product’s sustainability impact.
-            Scan a product, detect greenwashing, and get a clear <b>Green Score</b> with reasons.
-        </p>
-        """,
-        unsafe_allow_html=True
-)
+    with right:
+        st.markdown("""
+            <div style="height:420px; display:flex; flex-direction:column; justify-content:center;">
+                <h2 style="font-size:42px; margin-bottom:18px;">
+                    What is EcoLens?
+                </h2>
+    
+                <p style="font-size:20px; line-height:1.7; max-width:680px;">
+                    EcoLens helps eco-conscious shoppers identify truly sustainable products by providing clear
+                    insights into a product’s sustainability impact. Scan a product, detect greenwashing,
+                    and get a clear <b>Green Score</b> with reasons.
+                </p>
+            </div>
+        """, unsafe_allow_html=True)
 
     st.header("🚨 The Problem")
     st.write("Sustainability labels are vague and poorly regulated, so consumers often rely on marketing language instead of real data. Many of these claims are misleading, allowing greenwashing to go unnoticed. Because people lack the time and expertise to properly assess environmental impact, they make well-intentioned but poor choices. Additionally, there is no standardized way to verify eco-claims, and most existing apps reduce sustainability to simple green or red labels, hiding the real environmental costs of everyday products. As a result, people want to buy more environmentally friendly products but struggle to know which ones truly are.")
