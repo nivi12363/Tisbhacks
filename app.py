@@ -44,12 +44,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-c1, c2, c3 = st.columns([1, 1, 1])
+c1, c2, c3, c4 = st.columns([1, 1, 1])
 with c1:
     st.button("🌿 GreenScore", use_container_width=True, on_click=go, args=("GreenScore",))
 with c2:
     st.button("🤖 AI Chatbot", use_container_width=True, on_click=go, args=("Chatbot",))
 with c3:
+    st.button("Total Impact", use_container_width=True, on_click=go, args=("Impact",))
+with c4:
     st.button("ℹ️ About", use_container_width=True, on_click=go, args=("About",))
 
 st.markdown("</div>", unsafe_allow_html=True)
@@ -115,6 +117,14 @@ elif st.session_state.page == "Chatbot":
     if st.button("Ask"):
         st.info("Next: connect to your chatbot logic / API.")
 
+# -------------------------
+# TOTAL IMPACT PAGE
+# -------------------------
+elif st.session_state.page == "Impact":
+    st.button("← Back to Home", on_click=go, args=("Home",))
+    st.title("Total Impact")
+
+    st.write("Find out the environmental impact of your choices, and discover ways to increase your eco-friendliness")
 # -------------------------
 # ABOUT PAGE
 # -------------------------
