@@ -73,16 +73,16 @@ if st.session_state.page == "Home":
         """, unsafe_allow_html=True)
     
     with right:
-    st.markdown(
-        """<div style="height:420px; display:flex; flex-direction:column; justify-content:center;">
-<h2 style="font-size:42px; margin-bottom:18px;">What is EcoLens?</h2>
-<p style="font-size:20px; line-height:1.7; max-width:680px;">
-EcoLens helps eco-conscious shoppers identify truly sustainable products by providing clear insights into a product’s sustainability impact.
-Scan a product, detect greenwashing, and get a clear <b>Green Score</b> with reasons.
-</p>
-</div>""",
-        unsafe_allow_html=True
-    )
+        st.markdown(
+            """<div style="height:420px; display:flex; flex-direction:column; justify-content:center;">
+    <h2 style="font-size:42px; margin-bottom:18px;">What is EcoLens?</h2>
+    <p style="font-size:20px; line-height:1.7; max-width:680px;">
+    EcoLens helps eco-conscious shoppers identify truly sustainable products by providing clear insights into a product’s sustainability impact.
+    Scan a product, detect greenwashing, and get a clear <b>Green Score</b> with reasons.
+    </p>
+    </div>""",
+            unsafe_allow_html=True
+        )
 
     st.header("🚨 The Problem")
     st.write("Sustainability labels are vague and poorly regulated, so consumers often rely on marketing language instead of real data. Many of these claims are misleading, allowing greenwashing to go unnoticed. Because people lack the time and expertise to properly assess environmental impact, they make well-intentioned but poor choices. Additionally, there is no standardized way to verify eco-claims, and most existing apps reduce sustainability to simple green or red labels, hiding the real environmental costs of everyday products. As a result, people want to buy more environmentally friendly products but struggle to know which ones truly are.")
