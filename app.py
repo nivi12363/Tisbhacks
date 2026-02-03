@@ -131,12 +131,14 @@ if st.session_state.page == "Home":
                      style="width:100%; height:100%; object-fit:cover;">
             </div>
         """, unsafe_allow_html=True)
+
+
 # -------------------------
 # GREEN SCORE PAGE
 # -------------------------
 elif st.session_state.page == "GreenScore":
     st.button("← Back to Home", on_click=go, args=("Home",))
-    st.title("🌿 GreenScore")
+    st.title("🌿 GreenScore") 
 
     st.write("Scan a product (start with barcode input for hackathon).")
     barcode = st.text_input("Enter barcode (EAN/UPC)")
