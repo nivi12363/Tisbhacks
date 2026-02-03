@@ -144,7 +144,7 @@ if st.session_state.page == "Home":
 
     components.html("""
     <div style="
-        background:#1f2f4a;   /* blueish */
+        background:#69bae5;   /* blueish */
         border-radius:18px;
         padding:44px 38px;
         margin-top:22px;
@@ -173,7 +173,7 @@ if st.session_state.page == "Home":
             🤖 AI Chatbot
           </h2>
     
-          <p style="margin:0 0 14px 0; font-size:18px; line-height:1.7; color:rgba(105,186,229,0.92);">
+          <p style="margin:0 0 14px 0; font-size:18px; line-height:1.7; color:rgba(255,255,255,0.92);">
             Ask questions in plain English and get smart, personalized sustainability advice instantly.
           </p>
     
