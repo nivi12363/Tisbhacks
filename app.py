@@ -67,7 +67,7 @@ if st.session_state.page == "Home":
 
     with left:
         st.image(
-            "https://images.unsplash.com/photo-1542838132-92c53300491e",
+            "https://images.openai.com/static-rsc-3/L_9-L2VXhvFW5NZZvI6VLjA1QxHDiDeV5vyXsgKqM2ycJVtMFds_HEsJfhXYdziNs9fdDa4f0k4koZsaN3gehTxDddohscLt0wYAfwvMxRE?purpose=fullsize",
             use_container_width=True
         )
 
