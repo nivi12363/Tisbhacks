@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
 st.set_page_config(page_title="EcoLens", page_icon="🌱", layout="wide")
 
@@ -90,52 +91,51 @@ if st.session_state.page == "Home":
 
     st.header("✨ Key Features")
 
-    # -------- Feature 1: GreenScore Tracker (website-style block) --------
-    st.markdown("""
-    <div style="
-        background:#3f5a4d;
-        border-radius:18px;
-        padding:44px 38px;
-        margin-top:18px;
-    ">
-      <div style="display:flex; gap:34px; align-items:center;">
-    
-        <!-- Left text -->
-        <div style="flex:1.2;">
-          <h2 style="margin:0 0 14px 0; font-size:38px; color:white;">
-            🌿 GreenScore Tracker
-          </h2>
-    
-          <p style="margin:0 0 14px 0; font-size:18px; line-height:1.7; color:rgba(255,255,255,0.92);">
-            Scan personal-care products and get a transparent sustainability score with clear reasons.
-          </p>
-    
-          <ul style="margin:0; padding-left:20px; font-size:18px; line-height:1.7; color:rgba(255,255,255,0.92);">
-            <li>Barcode scan / product lookup</li>
-            <li>Score breakdown (ingredients, packaging, claims)</li>
-            <li>Greenwashing flags + simple explanations</li>
-            <li>Better alternatives for your purpose</li>
-          </ul>
-        </div>
-    
-        <!-- Right image -->
-        <div style="flex:1; display:flex; justify-content:flex-end;">
-          <div style="
-              width:520px;
-              height:320px;
-              border-radius:16px;
-              overflow:hidden;
-              box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-              background: rgba(255,255,255,0.06);
-          ">
-            <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1400&q=80"
-                 style="width:100%; height:100%; object-fit:cover;">
-          </div>
-        </div>
-    
+    components.html("""
+<div style="
+    background:#3f5a4d;
+    border-radius:18px;
+    padding:44px 38px;
+    margin-top:18px;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+">
+  <div style="display:flex; gap:34px; align-items:center;">
+
+    <div style="flex:1.2;">
+      <h2 style="margin:0 0 14px 0; font-size:38px; color:white;">
+        🌿 GreenScore Tracker
+      </h2>
+
+      <p style="margin:0 0 14px 0; font-size:18px; line-height:1.7; color:rgba(255,255,255,0.92);">
+        Scan personal-care products and get a transparent sustainability score with clear reasons.
+      </p>
+
+      <ul style="margin:0; padding-left:20px; font-size:18px; line-height:1.7; color:rgba(255,255,255,0.92);">
+        <li>Barcode scan / product lookup</li>
+        <li>Score breakdown (ingredients, packaging, claims)</li>
+        <li>Greenwashing flags + simple explanations</li>
+        <li>Better alternatives for your purpose</li>
+      </ul>
+    </div>
+
+    <div style="flex:1; display:flex; justify-content:flex-end;">
+      <div style="
+          width:520px;
+          height:320px;
+          border-radius:16px;
+          overflow:hidden;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+          background: rgba(255,255,255,0.06);
+      ">
+        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1400&q=80"
+             style="width:100%; height:100%; object-fit:cover;">
       </div>
     </div>
-    """, unsafe_allow_html=True)
+
+  </div>
+</div>
+""", height=420)
+
 
     
     # -------- Feature 2: AI Chatbot --------
