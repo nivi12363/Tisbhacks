@@ -90,27 +90,53 @@ if st.session_state.page == "Home":
 
     st.header("✨ Key Features")
 
-    # -------- Feature 1: GreenScore Tracker --------
-    t1, i1 = st.columns([2, 1], gap="large")
+    # -------- Feature 1: GreenScore Tracker (website-style block) --------
+    st.markdown("""
+    <div style="
+        background:#3f5a4d;
+        border-radius:18px;
+        padding:44px 38px;
+        margin-top:18px;
+    ">
+      <div style="display:flex; gap:34px; align-items:center;">
     
-    with t1:
-        st.subheader("🌿 GreenScore Tracker")
-        st.write("""
-        - Scan by barcode  
-        - Get a transparent sustainability score  
-        - See *why* it scored that way  
-        - Get better alternatives  
-        """)
+        <!-- Left text -->
+        <div style="flex:1.2;">
+          <h2 style="margin:0 0 14px 0; font-size:38px; color:white;">
+            🌿 GreenScore Tracker
+          </h2>
     
-    with i1:
-        st.markdown("""
-            <div style="height:220px; border-radius:12px; overflow:hidden;">
-                <img src="https://images.unsplash.com/photo-1584735422182-7b5a37b1c7aa"
-                     style="width:100%; height:100%; object-fit:cover;">
-            </div>
-        """, unsafe_allow_html=True)
+          <p style="margin:0 0 14px 0; font-size:18px; line-height:1.7; color:rgba(255,255,255,0.92);">
+            Scan personal-care products and get a transparent sustainability score with clear reasons.
+          </p>
     
-    st.write("")  # small spacer
+          <ul style="margin:0; padding-left:20px; font-size:18px; line-height:1.7; color:rgba(255,255,255,0.92);">
+            <li>Barcode scan / product lookup</li>
+            <li>Score breakdown (ingredients, packaging, claims)</li>
+            <li>Greenwashing flags + simple explanations</li>
+            <li>Better alternatives for your purpose</li>
+          </ul>
+        </div>
+    
+        <!-- Right image -->
+        <div style="flex:1; display:flex; justify-content:flex-end;">
+          <div style="
+              width:520px;
+              height:320px;
+              border-radius:16px;
+              overflow:hidden;
+              box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+              background: rgba(255,255,255,0.06);
+          ">
+            <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1400&q=80"
+                 style="width:100%; height:100%; object-fit:cover;">
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    """, unsafe_allow_html=True)
+
     
     # -------- Feature 2: AI Chatbot --------
     t2, i2 = st.columns([2, 1], gap="large")
