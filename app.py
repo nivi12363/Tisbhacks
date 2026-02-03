@@ -189,6 +189,57 @@ if st.session_state.page == "Home":
     </div>
     """, height=420)
 
+    #---------------------
+    # Impact Score
+    #---------------------
+  
+    components.html("""
+    <div style="
+        background:#1c3b2b;   /* forest green */
+        border-radius:18px;
+        padding:44px 38px;
+        margin-top:22px;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    ">
+      <div style="display:flex; gap:34px; align-items:center;">
+    
+        <!-- LEFT TEXT -->
+        <div style="flex:1.2;">
+          <h2 style="margin:0 0 14px 0; font-size:38px; color:white;">
+            🌲 Impact Score
+          </h2>
+    
+          <p style="margin:0 0 14px 0; font-size:18px; line-height:1.7; color:rgba(255,255,255,0.92);">
+            See the real environmental impact of every purchase in clear, easy-to-understand metrics.
+          </p>
+    
+          <ul style="margin:0; padding-left:20px; font-size:18px; line-height:1.7; color:rgba(255,255,255,0.92);">
+            <li>Track carbon footprint savings</li>
+            <li>Water & plastic reduction estimates</li>
+            <li>Compare products side-by-side</li>
+            <li>Visualize your eco progress over time</li>
+          </ul>
+        </div>
+    
+        <!-- RIGHT IMAGE -->
+        <div style="flex:1; display:flex; justify-content:flex-end;">
+          <div style="
+              width:520px;
+              height:320px;
+              border-radius:16px;
+              overflow:hidden;
+              box-shadow: 0 10px 30px rgba(0,0,0,0.30);
+              background: rgba(255,255,255,0.06);
+          ">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80"
+                 style="width:100%; height:100%; object-fit:cover;">
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    """, height=420)
+
 
 
 # -------------------------
