@@ -138,25 +138,57 @@ if st.session_state.page == "Home":
 
 
     
-    # -------- Feature 2: AI Chatbot --------
-    t2, i2 = st.columns([2, 1], gap="large")
+    #-------------------------
+    # AI Chatbot
+    #-------------------------
+
+    components.html("""
+    <div style="
+        background:#1f2f4a;   /* blueish */
+        border-radius:18px;
+        padding:44px 38px;
+        margin-top:22px;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    ">
+      <div style="display:flex; gap:34px; align-items:center;">
     
-    with t2:
-        st.subheader("🤖 AI Chatbot")
-        st.write("""
-        - Ask about ingredients and claims  
-        - Detect greenwashing language  
-        - Get product recommendations  
-        - Tips for safer/sustainable swaps  
-        """)
+        <!-- LEFT IMAGE -->
+        <div style="flex:1; display:flex; justify-content:flex-start;">
+          <div style="
+              width:520px;
+              height:320px;
+              border-radius:16px;
+              overflow:hidden;
+              box-shadow: 0 10px 30px rgba(0,0,0,0.30);
+              background: rgba(255,255,255,0.06);
+          ">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1400&q=80"
+                 style="width:100%; height:100%; object-fit:cover;">
+          </div>
+        </div>
     
-    with i2:
-        st.markdown("""
-            <div style="height:220px; border-radius:12px; overflow:hidden;">
-                <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4"
-                     style="width:100%; height:100%; object-fit:cover;">
-            </div>
-        """, unsafe_allow_html=True)
+        <!-- RIGHT TEXT -->
+        <div style="flex:1.2;">
+          <h2 style="margin:0 0 14px 0; font-size:38px; color:white;">
+            🤖 AI Chatbot
+          </h2>
+    
+          <p style="margin:0 0 14px 0; font-size:18px; line-height:1.7; color:rgba(255,255,255,0.92);">
+            Ask questions in plain English and get smart, personalized sustainability advice instantly.
+          </p>
+    
+          <ul style="margin:0; padding-left:20px; font-size:18px; line-height:1.7; color:rgba(255,255,255,0.92);">
+            <li>Ask about ingredients and claims</li>
+            <li>Detect greenwashing language</li>
+            <li>Get product recommendations</li>
+            <li>Tips for safer / sustainable swaps</li>
+          </ul>
+        </div>
+    
+      </div>
+    </div>
+    """, height=420)
+
 
 
 # -------------------------
