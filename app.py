@@ -90,47 +90,47 @@ if st.session_state.page == "Home":
 
     st.header("✨ Key Features")
 
-# -------- Feature 1: GreenScore Tracker --------
-t1, i1 = st.columns([2, 1], gap="large")
-
-with t1:
-    st.subheader("🌿 GreenScore Tracker")
-    st.write("""
-    - Scan by barcode  
-    - Get a transparent sustainability score  
-    - See *why* it scored that way  
-    - Get better alternatives  
-    """)
-
-with i1:
-    st.markdown("""
-        <div style="height:220px; border-radius:12px; overflow:hidden;">
-            <img src="https://images.unsplash.com/photo-1584735422182-7b5a37b1c7aa"
-                 style="width:100%; height:100%; object-fit:cover;">
-        </div>
-    """, unsafe_allow_html=True)
-
-st.write("")  # small spacer
-
-# -------- Feature 2: AI Chatbot --------
-t2, i2 = st.columns([2, 1], gap="large")
-
-with t2:
-    st.subheader("🤖 AI Chatbot")
-    st.write("""
-    - Ask about ingredients and claims  
-    - Detect greenwashing language  
-    - Get product recommendations  
-    - Tips for safer/sustainable swaps  
-    """)
-
-with i2:
-    st.markdown("""
-        <div style="height:220px; border-radius:12px; overflow:hidden;">
-            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4"
-                 style="width:100%; height:100%; object-fit:cover;">
-        </div>
-    """, unsafe_allow_html=True)
+    # -------- Feature 1: GreenScore Tracker --------
+    t1, i1 = st.columns([2, 1], gap="large")
+    
+    with t1:
+        st.subheader("🌿 GreenScore Tracker")
+        st.write("""
+        - Scan by barcode  
+        - Get a transparent sustainability score  
+        - See *why* it scored that way  
+        - Get better alternatives  
+        """)
+    
+    with i1:
+        st.markdown("""
+            <div style="height:220px; border-radius:12px; overflow:hidden;">
+                <img src="https://images.unsplash.com/photo-1584735422182-7b5a37b1c7aa"
+                     style="width:100%; height:100%; object-fit:cover;">
+            </div>
+        """, unsafe_allow_html=True)
+    
+    st.write("")  # small spacer
+    
+    # -------- Feature 2: AI Chatbot --------
+    t2, i2 = st.columns([2, 1], gap="large")
+    
+    with t2:
+        st.subheader("🤖 AI Chatbot")
+        st.write("""
+        - Ask about ingredients and claims  
+        - Detect greenwashing language  
+        - Get product recommendations  
+        - Tips for safer/sustainable swaps  
+        """)
+    
+    with i2:
+        st.markdown("""
+            <div style="height:220px; border-radius:12px; overflow:hidden;">
+                <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4"
+                     style="width:100%; height:100%; object-fit:cover;">
+            </div>
+        """, unsafe_allow_html=True)
 # -------------------------
 # GREEN SCORE PAGE
 # -------------------------
