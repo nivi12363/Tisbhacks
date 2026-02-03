@@ -50,7 +50,7 @@ with c1:
 with c2:
     st.button("🤖 AI Chatbot", use_container_width=True, on_click=go, args=("Chatbot",))
 with c3:
-    st.button("Total Impact", use_container_width=True, on_click=go, args=("Impact",))
+    st.button("🌏Total Impact", use_container_width=True, on_click=go, args=("Impact",))
 with c4:
     st.button("ℹ️ About", use_container_width=True, on_click=go, args=("About",))
 
@@ -122,7 +122,7 @@ elif st.session_state.page == "Chatbot":
 # -------------------------
 elif st.session_state.page == "Impact":
     st.button("← Back to Home", on_click=go, args=("Home",))
-    st.title("Total Impact")
+    st.title("🌏Total Impact")
 
     st.write("Find out the environmental impact of your choices, and discover ways to increase your eco-friendliness")
 # -------------------------
